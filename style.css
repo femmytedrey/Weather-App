@@ -118,6 +118,9 @@ body{
     line-height: 40px;
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .button.button-large{
