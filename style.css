@@ -146,5 +146,78 @@ body{
     width: 270px;
     /* background: green; */
   }
-  .button-dial
+
+  .button-dial-top{
+    background: var(--button-bg-color);
+    box-shadow: var(--button-shadow);
+    border-radius: 50%;
+    height: 70%;
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 5;
+    text-align: center;
+  }
+
+  .button-dial-label{
+    z-index: 10;
+    position: relative;
+    font-size: 28px;
+    fill: #067CF8;
+    color: #067CF8;
+  }
+
+  .button-dial-spoke{
+    display: block;
+    height: 2px;
+    width: 83%;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 5;
+    background: rgba(96, 171, 254, 0.6);
+    top: 50%;
+  }
+
+  .button-dial-spoke:nth-child(2){
+    transform: rotate(30deg);
+  }
+
+  .button-dial-spoke:nth-child(3){
+    transform: rotate(60deg);
+  }
+
+  .button-dial-spoke:nth-child(4){
+    transform: rotate(90deg);
+  }
+
+  .button-dial-spoke:nth-child(5){
+    transform: rotate(120deg);
+  }
+
+  .button-dial-spoke:nth-child(6){
+    transform: rotate(150deg);
+  }
+
+  .button-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 24px;
+    width: 100%;
+  }
+  
+  .button-block span {
+    font-size: 16px;
+  }
+
+  .subtle{
+    color: #6D6E74;
+  }
+
+  .flex-button-container{
+    display: flex;
+    justify-content: space-between;
+  }
 }
